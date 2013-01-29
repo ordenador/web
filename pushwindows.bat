@@ -6,7 +6,7 @@ for /f "delims=" %%a in ('time/t') do @set mytime=%%a
 set fvar=%mydate%%mytime% 
 
 REM add all new files 
-start git add .
+"C:\Program Files (x86)\Git\bin\git" add .
 start git commit -a -m "Commit automatico (pushwindows.bat): %fvar%" 
 
 start git push
