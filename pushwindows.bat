@@ -1,7 +1,8 @@
-@ECHO on
-set COMENTARIO=0
+@ECHO OFF
+echo.
+REM set COMENTARIO=0
 SET /P COMENTARIO=Comentario: 
-if COMENTARIO==0 (COMENTARIO="Commit automatico (pushwindows.bat): %fvar%")
+if not defined COMENTARIO (COMENTARIO="Commit automatico (pushwindows.bat): %fvar%")
 for /f "delims=" %%a in ('date/t') do @set mydate=%%a 
 for /f "delims=" %%a in ('time/t') do @set mytime=%%a 
 set fvar=%mydate%%mytime% 
