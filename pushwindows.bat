@@ -1,4 +1,4 @@
-@ECHO OFF
+REM @ECHO OFF
 
 SET /P COMENTARIO=Comentario: 
 if %COMENTARIO% == "" (COMENTARIO="Commit automatico (pushwindows.bat): %fvar%")
