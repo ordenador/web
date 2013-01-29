@@ -1,7 +1,6 @@
 @ECHO OFF
 
 SET /P COMENTARIO=Comentario: 
-REM if not defined COMENTARIO (COMENTARIO="Commit automatico (pushwindows.bat): %fvar%")
 if %COMENTARIO% == "" (COMENTARIO="Commit automatico (pushwindows.bat): %fvar%")
 
 for /f "delims=" %%a in ('date/t') do @set mydate=%%a 
