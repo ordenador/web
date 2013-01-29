@@ -1,5 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  "ordenador.cl"
+  "ordenador.cl
+
+
+
+  ."
 end
