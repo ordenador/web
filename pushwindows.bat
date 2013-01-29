@@ -1,5 +1,5 @@
 @ECHO ON
-set COMENTARIO=s
+set COMENTARIO=
 SET /P COMENTARIO=Comentario: 
 if o%COMENTARIO%o==oo (set COMENTARIO="Commit automatico (pushwindows.bat): %fvar%")
 for /f "delims=" %%a in ('date/t') do @set mydate=%%a 
