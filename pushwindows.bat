@@ -6,7 +6,7 @@ set fvar=%mydate%%mytime%
 
 "%ProgramFiles(x86)%\Git\bin\git" add .
 "%ProgramFiles(x86)%\Git\bin\git" commit -a -m "Commit automatico (pushwindows.bat): %fvar%" 
-"%ProgramFiles(x86)%\Git\bin\git" push
-
+"%ProgramFiles(x86)%\Git\bin\git" push heroku master
+"%ProgramFiles(x86)%\Git\bin\git" push git@github.com:ordenador/web.git
 
 
