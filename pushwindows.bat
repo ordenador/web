@@ -8,7 +8,6 @@ set fvar=%mydate%%mytime%
 REM Comentario mediante argumento o dejar en blanco para mensaje por defecto
 SET COMENTARIO="%*"
 if %COMENTARIO%=="" (set COMENTARIO="Commit automatico (pushwindows.bat): %fvar%")
-echo %COMENTARIO%
 
 REM Comandos git
 "%ProgramFiles(x86)%\Git\bin\git" add .
