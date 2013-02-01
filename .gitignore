@@ -15,4 +15,4 @@
 /tmp
 
 # Archivos de configuración
-database.yml
+/config/database.yml
