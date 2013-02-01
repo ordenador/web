@@ -1,0 +1,27 @@
+<h1>Listing shuttles</h1>
+
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Color</th>
+    <th>Funding</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shuttles.each do |shuttle| %>
+  <tr>
+    <td><%= shuttle.model %></td>
+    <td><%= shuttle.color %></td>
+    <td><%= shuttle.funding %></td>
+    <td><%= link_to 'Show', shuttle %></td>
+    <td><%= link_to 'Edit', edit_shuttle_path(shuttle) %></td>
+    <td><%= link_to 'Destroy', shuttle, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shuttle', new_shuttle_path %>

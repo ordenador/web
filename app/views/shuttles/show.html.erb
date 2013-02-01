@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Model:</b>
+  <%= @shuttle.model %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @shuttle.color %>
+</p>
+
+<p>
+  <b>Funding:</b>
+  <%= @shuttle.funding %>
+</p>
+
+
+<%= link_to 'Edit', edit_shuttle_path(@shuttle) %> |
+<%= link_to 'Back', shuttles_path %>

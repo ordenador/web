@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  model: MyString
+  color: MyString
+  funding: 1
+
+two:
+  model: MyString
+  color: MyString
+  funding: 1
